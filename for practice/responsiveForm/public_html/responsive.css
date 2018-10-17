@@ -1,0 +1,66 @@
+
+#maindiv{
+    width: 100%;
+    height: auto;
+}
+.row{
+    width: 100%;
+    height: auto;
+
+}
+
+@media screen and (min-width: 769px){
+    .col-lg{
+        width: 25%;
+        height: auto;
+        float:left;
+       
+        font-size: 20px;
+    }}
+@media screen and (max-width: 769px){
+    .col-md{
+        width: 50%;
+        height: auto;
+        float:left;
+        
+        font-size: 25px;
+
+    }}
+@media screen and (max-width: 468px){
+    .col-sm{
+        width: 100%;
+        height: auto;
+        float:left;
+        color:lightpink;
+        font-size: 20px;
+    }}
+
+.cornflowerblue{
+    background: cornflowerblue;
+}
+.lightseagreen{
+    background: lightseagreen ;
+}
+
+.lightpink{
+    background: lightpink;
+    
+}
+.peachpuff{
+    background: peachpuff;
+    
+}
+
+.lightsalmon{
+    background: lightsalmon;
+}
+.tomato{
+    background: tomato;
+}
+.lightblue{
+    background: lightblue;
+}
+.beige{
+    background: beige;
+}
+

@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2018, 4:33:01 PM
+    Author     : User
+*/
+
+#mainDiv{
+    width:100%;
+    height: auto;
+}
+.row{
+    height: auto;
+    width:100% ;
+}
+
+@media screen and (min-width:769px) {
+    .col-lg{
+    height: auto;
+    width: 25%;
+    float: left;
+    color: red;
+    font-size: 30px;
+}
+}
+@media screen and (max-width:768px) {
+.col-md{
+    height: auto;
+    width: 50%;
+    float: left;
+     color: green;
+font-size: 25px;}
+}
+@media screen and (max-width:468px) {
+.col-sm{
+    height: auto;
+    width: 100%;
+    float: left;
+    color: orange;
+    font-size: 20px;
+}
+}
+
+
+
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.violet{
+    background-color: violet;
+}
+.pink{
+    background-color: pink;
+}
+.coral{
+    background-color: coral;
+}

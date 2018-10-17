@@ -1,0 +1,45 @@
+<!doctype html>
+	<html>
+		<head>
+			<title> This is condional work</title>
+			<style type="text/css">
+			h1{color:red;}
+			h2{color:blue;}
+			h3{color:green;}
+			</style>
+			
+		</head>
+		<body>
+				<script>
+					var x=20;
+					var y=15;
+					if(x>y) { //condition is true here,because 20 
+					          //is greater than15
+					document.write("<h1>x is big</h1>");
+					}
+					
+					<!--if else Block-->
+					var p=20;
+					var q=28;
+					if(p>q) { //condition is false here, because 20 
+					          //is not greater than 28,so else block will be executed
+					document.write("<h2>p is big</h2>");
+					}else{
+					document.write("<h2>p is not big</h2>");
+					}
+					
+					var m=20;
+					var n=20;
+					if(m>n) { 
+					document.write("<h3>m is big</h3>");
+					}else if(m<n){
+					document.write("<h3>m is not big</h3>");
+					}
+					else{
+					document.write("<h3>m and n is equal</h3>");
+					}
+				</script>
+	 
+		
+		</body>
+	</html>

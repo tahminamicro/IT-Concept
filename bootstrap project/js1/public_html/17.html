@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var tax = .05;
+            function addTax(item) {
+                var total = item + (item * tax);
+                var newTotal = Math.floor(total);
+                var fraction = Math.round(total * 100) % 100;
+                if (fraction < 0) {
+                    fraction = "0" + fraction;
+                }
+                total = newTotal + " " + fraction;
+                alert("your Total is: $" + total);
+
+
+            }
+        </script>
+    <center>
+        <h2>
+            <a href="#" onClick="addTax(7.22)">Click for total</a>
+        </h2>
+    </center>
+</body>
+</html>

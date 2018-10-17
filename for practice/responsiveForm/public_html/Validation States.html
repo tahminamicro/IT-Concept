@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.css"></script>
+    </head>
+    <body>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Focused</label>
+                <div class="col-sm-10">
+                    <input class="form control" id="focusedInput" type="text" value="this is focused...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputpassword" class="col-sm-2 control-label">Disabled</label>
+                <div class="col-sm-10">
+                    <input class="form control" id="disableInput" type="text" 
+                           placeholder="disabled input here..." disabled>
+                </div>
+            </div>
+            <fieldset disabled>
+                <div class="form-group">
+                    <label for="disabledTextInput" class="col-sm-2 control-label">
+                        Disabled input (Fieldset disabled)
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="text" id="disabledTextInput" class="form-control"
+                               placeholder="Disabled input">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect" class="col-sm-2 control-label">
+                        Disabled select menu (Fieldset disabled)
+                    </label>
+                    <div class="col-sm-10">
+                        <select id="disabledSelect" class="form-control">
+
+                            <option>Disabled select</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group has-success">
+                <label class="col-sm-2 control-label" for="inputsuccesss">
+                    Input with success
+                </label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputsuccesss" class="form-control">
+                </div>
+                  </div>
+             <div class="form-group has-warning">
+                 <label class="col-sm-2 control-label" for="inputwarning">
+                      Input with warning
+              </label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputWarning" class="form-control">
+                </div>
+                  </div>
+             <div class="form-group has-error">
+                 <label class="col-sm-2 control-label" for="inputError">
+                      Input with error
+                      </label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputError" class="form-control">
+                </div>
+                  </div>
+        </form>
+    </body>
+</html>
