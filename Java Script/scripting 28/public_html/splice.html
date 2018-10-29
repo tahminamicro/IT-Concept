@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var computer = new Array("Doel", "Apple", "IBM", "HP");
+            document.write(computer);
+            document.write("<hr/>");
+            
+            computer.splice(1,0, "DELL"); 
+            
+            document.write(computer);
+            document.write("<hr/>");
+            
+            computer.splice(1,2, "LENOVO"); 
+            document.write(computer);
+            document.write("<hr/>");
+            
+            
+            computer.splice(2,1); 
+            document.write(computer);
+            document.write("<hr/>");
+            
+             computer.splice(2,0, "APPLE"); 
+            document.write(computer);
+            document.write("<hr/>");
+            
+            
+             computer.splice(2,2); //beginnig from index 2 and remove 2 element
+            document.write(computer);
+            document.write("<hr/>");
+        </script>
+    </body>
+</html>

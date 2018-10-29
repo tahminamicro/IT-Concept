@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sort Array</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="lightsteelblue">
+        <script>
+            var zoo=new Array("Zebras","lions","apes","tigers");
+            zoo.sort();
+            var newZoo="";
+            for(var counter=0; counter<zoo.length; counter++){
+                newZoo +=(zoo[counter]+"<br>");
+            }
+            document.write("<p>Alphabetical Animals<p>" + newZoo);
+        </script>
+    </body>
+</html>
