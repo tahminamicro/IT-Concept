@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+
+            outloop:
+                    for (i = 1; i <= 10; i++) {
+                for (j=10; j >= 1; j--) {
+                    if (j == 5) {
+                        continue outloop;
+                    }
+                    document.write(i + " " + j+"<br/>");
+                }
+            }
+         
+        </script>
+    </body>
+</html>

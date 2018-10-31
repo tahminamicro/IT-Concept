@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sum Using Loop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Sum using loop</h2>
+        <script>
+            var sn=parseInt(prompt("Enter starting number",""));
+             var en=parseInt(prompt("Enter ending number",""));
+             var sum=0;
+             
+             function makeSum(startingNum, endingNum){
+                 if(startingNum < endingNum){
+                     for(startingNum; startingNum <= endingNum;
+                             startingNum++){
+                           sum += startingNum;      
+                             }
+                 } else if(startingNum > endingNum){
+                     for(startingNum; startingNum >= endingNum;
+                             startingNum--){
+                           sum += startingNum;      
+                             }
+             } else if (startingNum == endingNum){
+                 sum = startingNum;
+             } else{
+                 sum=0;
+                 
+             }
+             return sum;
+         }
+         alert(makeSum(sn , en));
+        </script>
+        
+        <h1>Got My Number!!!! yuppy!!</h1>
+    </body>
+</html>

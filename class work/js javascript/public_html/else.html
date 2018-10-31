@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Else if Structure</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="palegreen">
+        <script>
+            var puppy=prompt("What kind of pup would you like?","");
+            var puppyLC=puppy.toLowerCase();
+            
+            if(puppyLC=="greater swiss mountain dog"){
+                alert("Ye we have Swissies!");
+            }
+            else if(puppyLC=="great dane"){
+                alert("Yes we have those big wondweful Great danes!");
+            }
+            
+            else if(puppyLC=="irish wolfhound"){
+                alert("Yws we have the gentle Giants!");
+            }
+            
+            else{
+                aler("Sorry we only have giant dogs");
+                puppy="information where to find that breed";
+            }
+            var message="<p>come get your<b>"+puppy;
+            message+="</b>at<h3>Goliath\'s Breeders</h3>";
+            document.write(message);
+        </script>
+    </body>
+</html>
