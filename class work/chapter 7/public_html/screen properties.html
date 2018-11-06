@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            h2{
+                font-size: 16pt;
+                font-family: verdana;
+                color: blueviolet;
+            }
+            .outText{
+                font-size: 16pt;
+                font-family: verdana;
+                color: blueviolet;
+                background-color: black;
+            }
+                    
+        </style>
+    </head>
+    <body bgcolor="azure">
+        <script>
+            function showScreen(){
+                var display="<h2>Your screen has the following characteristics:<h2><div class=outText><b><br>";
+                var screenSee=new Array(5);
+                screenSee[0]="Avaiable screen height=" +screen.availHeight;
+                screenSee[1]="Avaiable screen width=" +screen.availWidth;
+                screenSee[2]= "you have"+(screen.colorDepth) +"bit color.";
+                screenSee[3]="your screen is" + screen.height+"pixels high";
+                screenSee[4]="and" + screen.width+"pixels wide";
+                
+                for(var counter=0; counter<screenSee.length;counter++){
+                    display +=screenSee[counter]+"<br>";
+                }
+                display+="<br></b></div>"
+                document.write(display);
+            }
+            showScreen()
+        </script>
+        
+    </body>
+</html>

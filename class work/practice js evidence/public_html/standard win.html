@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Timing methods</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var cupUp = new Image();
+            cupUp.src = "cupJava.jpg";
+            var cupDown = new Image();
+            cupDown.src = "hideJava.jpeg";
+            var alpha;
+            function interval() {
+                alpha = window.setInterval("document.cup.src=cupDown.src", 3000);
+            }
+
+            function timeOut() {
+                window.setTimeout("document.cup.src=cupUp.src", 5000);
+                window.clearInterval(alpha);
+            }
+
+        </script>
+    </head>
+    <body>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" align="center">
+            <tr valign="Middle">
+                <td align="center">
+                    <image name="cup" src="cupJava.jpg" alt="Java" width="64" height="38"><p>
+                        <a href="#" onclick="interval()">Interval</a>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="#" onclick="timeOut()">Time Out</a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

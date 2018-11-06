@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Regular Expression Methods in Strings</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                font-family:verdana;
+                background-color: plum;
+            }
+            
+            h3{
+                color: blueviolet;
+                background-color: buttonshadow;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var matchThis="Play it again Sam";
+            var stringer1=matchThis.match(/sam/i);
+            //string replace()
+            var replaceThis="The script is embeded in Java.";
+            var stringer2=replaceThis.replace(/Java/g,"HTML");
+            //string search()
+            
+            var searchThis="www.sandlight.com";
+            var stringer3=searchThis.slice(searchThis.search(/.com/));
+            
+            var splitThis="She has two important issues";
+            var stringer4=splitThis.split(/two important/i);
+            var display="<h3>Regular expression method in string objects</h3>";
+            display+=matchThis+" "+"becomes:"+stringer1+"<br>";
+            display+=replaceThis+" "+"becomes:"+stringer2+"<br>";
+            display+=searchThis+""+ "becomes,with the help of string.slice():"+stringer3+"<br/>";
+            display+=splitThis+"becomes an array:"+stringer4[0]+" "+stringer4[1]+"<br>";
+            var showOff=new String(display);
+            document.write(showOff.fontcolor("#972126"));
+            
+        </script>
+    </body>
+</html>

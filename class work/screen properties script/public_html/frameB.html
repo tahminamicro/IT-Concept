@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>window properties</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="winprop.css">
+    </head>
+    <body bgcolor="#c6d699">
+        <script>
+            var display="<h3>" +self.name+"</h3>";
+            display +="<div class='bod'>";
+            var gone=" ";
+            var alpha=self.closed;
+            if(alpha==false){
+                var gone="never";
+            }
+            display +="This window has"+gone+"been closed.<br>";
+            self.defaultStatus="\"this window property can be changed.\"";
+            display +="The default status reads:"+self.defaultStatus+"<br></div>"
+            document.write(display);
+        </script>
+        <p>
+            <a href="dummy.html">Go Dummy</a>
+        </p>
+       
+    </body>
+</html>

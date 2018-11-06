@@ -6,22 +6,20 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>print 1 to except 3& 5</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <script>
-        function abc(i , j){
-            for(i; i<=10; i++){
-                if(i%3==0 || i%5==0){
-                    continue;
-                }
-                document.write(i+" "+"<br>");
+            var i;
+            var fib= [];
+            fib[0]=0;
+            fib[1]=1;
+            for(i=2; i<=10; i++){
+                fib[i]=fib[i-2]+fib[i-1];
+                document.write(fib[i]+"<br/>");
             }
-        }
-        
-        abc(1 , 10);
         </script>
     </body>
 </html>

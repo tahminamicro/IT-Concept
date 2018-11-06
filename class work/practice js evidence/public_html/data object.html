@@ -6,22 +6,21 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>print 1 to except 3& 5</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body bgcolor="pink">
         <script>
-        function abc(i , j){
-            for(i; i<=10; i++){
-                if(i%3==0 || i%5==0){
-                    continue;
-                }
-                document.write(i+" "+"<br>");
+            var NowDate= new Date();
+            var DateNow=NowDate.getDate();
+            var MonthNow=NowDate.getMonth();
+            
+            if(DateNow== 14 && MonthNow==1){
+                alert("Happy Valentines Day!")
+            }else{
+                alert("Please wait untill February 14 you romantic fool!")
             }
-        }
-        
-        abc(1 , 10);
         </script>
     </body>
 </html>

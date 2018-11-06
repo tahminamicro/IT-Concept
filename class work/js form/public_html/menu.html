@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function changethem(){
+                parent.data.document.forms[0].elements[2].value="Hi from Menu";
+                parent.data.document.forms[0].elements[1].value="Hello";
+                
+            }
+        </script>
+    </head>
+    <body bgcolor="plum">
+        <h3>Menu</h3>
+        <form>
+            <input type="button" value="Send Two!" onClick="changethem()">
+        </form>
+    </body>
+</html>

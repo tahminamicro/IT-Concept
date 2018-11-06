@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Forward</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function doubleUp(){
+                window.location="backpage.html";
+            }
+            function forwardTo(){
+                var alpha=history.forward();
+            }
+        </script>
+    </head>
+    <body bgcolor="plum">
+        <p>
+        <h3>Remember this page!</h3>
+        First double click the top button. That will take you to another site.<br>
+        when you return to this page, click the bottom button.<p>
+        <form>
+            Double click this button first:
+            <input type="button" value="Two clicks here" onDblClick='doubleUp()'><p>
+                When you return, click this button.<input type="button" value='Go Forward' onclick="forwardTo()">
+        </form>
+    </body>
+</html>

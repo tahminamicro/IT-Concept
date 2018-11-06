@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hierarchy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            h2{
+                font-size: 18pt;
+                color: aqua;
+                font-family: verdana;
+            }
+            
+            .clickNote{
+                font-size: 12pt;
+                color: bisque;
+                font-weight: bold;
+                font-family: verdana;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body bgcolor="#839063" onload="javascript:window.document.petstore.reset()">
+        <script>
+            function doIt(){
+                window.document.petstore.puppy.value="swissy";
+                window.document.petstore.clicker.value="I\'ve been clicked";
+            }
+        </script>
+        <h2> object hierarchy practice</h2>
+        <span class="clickNote">&nbsp Click the button: &nbsp</span>
+        <form name="petstore">
+            <input type="text" name="puppy">
+            <input type="button" name="clicker" value="Click to change value of text window"
+                   onClick="doIt()">
+        </form>
+        
+    </body>
+</html>

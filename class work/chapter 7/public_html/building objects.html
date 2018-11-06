@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            h2{
+                font-size: 16pt;
+                color: blue;
+                font-family: verdana;
+            }
+            
+             h3{
+                font-size: 14pt;
+                color: beige;
+                font-family: verdana;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body bgcolor="#abc241">
+        <script>
+            var acme= new Object();
+            acme.management="Management coordinates everything";
+            acme.management= new Object();
+            acme.management.rand="Research and development works to develop new and better products and services";
+            acme.finance="Finance keeps track of the money";
+            acme.production="production makes the stuff";
+            acme.marketting="Marketting develops strategies to target markets for the products.";
+            acme.marketting=new Object();
+            acme.marketting.sales="Sales contacts potential clents and sells the product.";
+            acme.fulfillment="Fullfillment delivers sold products.";
+            var display="<h2>First the properties of te acme object</h2>";
+            for(var counter in acme){
+                display += counter +"<br>";
+            }
+            display +="<h3>And now the values of the properties of management ,marketting, finance and production </h3>";
+            display += acme.management.rand + "<br>";
+            display +=acme.marketting.sales + "<br>";
+            display +=acme.finance + "<br>";
+            display +=acme.production;
+            document.write(display);
+            
+        </script>
+       
+    </body>
+</html>

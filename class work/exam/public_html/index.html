@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>evidence</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            //slice extracts a part of the string and return a new string
+            var str="Apple, Banana, Mango";
+            var res= str.slice(14 , 20);
+            document.write(res);
+            
+            document.write("<hr/>");
+            
+            //search 
+            
+            var str="learning something new always fascinate me.";
+            var col=str.search("something");
+            document.write(col);
+            document.write("<hr/>");
+            
+            //substring
+            var str="Chocolate, Icecream, Biscuits";
+            var food=str.substring(11,19);
+            document.write(food);
+            document.write("<hr/>");
+            
+            //join
+            
+             var country= ["America","Bangladesh","Canada","Denmark"];
+              var bigCountry= country.join(",");        
+              document.write(bigCountry);
+              document.write("<hr/>");
+            
+             //push & pop
+              var flower=["Rose","Lily","Jasmine"];
+              document.write(flower.pop(" "));
+              document.write("<hr/>");
+              document.write(flower.push(" "+"Dalia"));
+              
+              
+              
+            
+        </script>
+    </body>
+</html>

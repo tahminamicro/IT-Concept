@@ -6,22 +6,20 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>print 1 to except 3& 5</title>
+        <title>Info page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
         <script>
-        function abc(i , j){
-            for(i; i<=10; i++){
-                if(i%3==0 || i%5==0){
-                    continue;
-                }
-                document.write(i+" "+"<br>");
+            function message(){
+                parent.data.document.forms[0].elements[0].value="Greetings";
             }
-        }
-        
-        abc(1 , 10);
         </script>
+    </head>
+    <body bgcolor="azure">
+        <h3>Header</h3>
+        <form>
+            <input type="text">
+            <input type="button" value="Redcorate" onClick="message()">
+        </form>
     </body>
 </html>
