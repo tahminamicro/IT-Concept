@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Text Box Math</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function addEmUp() {
+                var sum = document.calc.aOne.value + document.calc.aTwo.value;
+                alert(sum);
+            }
+        </script>
+    </head>
+    <body bgcolor="palegreen">
+        <h4>Enter 2 numbers and press the sum button.</h4>
+        <form name="calc">
+            <input type="text" name="aOne" type="text"><p>
+            <input type="text" name="aTwo" type="text"><p>
+                <input type="submit" value="sum" onclick="addEmUp()">
+        </form>
+
+    </body>
+</html>

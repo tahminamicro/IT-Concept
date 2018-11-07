@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>on Focus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                background-color: peru;
+                font-family: verdana;
+                color: white;
+            }
+        </style>
+        <script>
+            var auto=new Object();
+            var bigOne=new Object();
+            function showChange(){
+                auto=document.forms[0].ralph;
+                auto.value="More change"
+            }
+            function areaWrite(){
+                bigOne=document.forms[0].alice;
+                bigOne.value="you have plenty of rooms to write here"
+            }
+        </script>
+    </head>
+    <body>
+        <h3>write something in either text window<br>
+        and then click the other window.</h3>
+        <form>
+            <input type="text" name="ralph" onChange="showChange();"><p>
+                <textarea cols="30" rows="5" name="alice" onBlur="areaWrite();" ></textarea>
+        </form>
+      
+    </body>
+</html>

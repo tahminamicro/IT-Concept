@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Prime number</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function isPrime(num){
+                for(var i=2; i<num; i++)
+                    if(num%i==0)return false;
+                return num!==1 && num !==0;
+            }
+            alert(isPrime(9));
+            function printPrimes(sn , en){
+                for(sn; sn<=en; sn++){
+                    if(isPrime(sn)){
+                        document.write(sn+"<hr/>");
+                    }
+                }
+            }
+            printPrimes(1 ,100)
+        </script>
+    </body>
+</html>

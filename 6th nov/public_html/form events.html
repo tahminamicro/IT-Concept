@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>onFocus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function autoWrite(){
+                document.forms[0].elements[0].value="Greetings earthling!";
+            }
+        </script>
+    </head>
+    <body bgcolor="azure">
+        <h3>Click on the text Window</h3>
+        <form>
+            <input type="text" onFocus="autoWrite();">
+        </form>
+        
+    </body>
+</html>

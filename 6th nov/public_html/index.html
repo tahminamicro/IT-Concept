@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            label{
+                color: red;
+                padding: 3px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Form Validation</h2>
+        <form name="myForm">
+            Name:<input type="text" name="fname"><label id="fnamex"></label><br>
+            Gender:<input type="radio" name="gender" value="male"/>Male
+            <input type="radio" name="gender" value="female"/>Female
+            <label id="gender"></label><br>
+            Education:<input type="checkbox" name="ssc" value="ssc"/>SSC
+            <input type="checkbox" name="hsc" value="hsc"/>HSC
+            <label id="education"></label><br>
+            Round:<select name="round">
+                <option value="select a value" selected="selected">Select a value</option>
+                <option value="round 39">Round-39</option>
+                <option value="round 38">Round-38</option>
+                <option value="round 37">Round-37</option>
+            </select>
+            <label id="round"></label><br>
+            <textarea rows="5" cols="20" name="msg" placeholder="at least 10 Charecters"></textarea>
+            <label id="msg"></label><br>
+            <input type="reset" value="reset">
+        </form>
+        <button onclick="validateForm()">Submit</button>
+        <button onclick="closeWindow()">Close Window</button>
+
+        <script>
+            var win;
+            function closeWindow() {
+                win.close();
+            }
+            function validateForm() {
+                var fname = document.forms["myForm"]["fname"].value;
+                var gender = document.forms["myForm"]["gender"].value;
+                var education = "";
+                if (document.forms["myForm"].ssc.checked) {
+                    education+= document.forms["myForm"]["ssc"].value;
+                }
+                if (document.forms["myForm"].hsc.checked) {
+                    education+= "," + document.forms["myForm"]["hsc"].value;
+                }
+                var round = document.forms["myForm"]["round"].value;
+                var msg = document.forms["myForm"]["msg"].value;
+
+                if (fname == "") {
+                    document.getElementById('fnamex').innerHTML = "Tell me your name";
+                    return false;
+                } else if (fname.length < 3) {
+                    document.getElementById('fnamex').innerHTML = "At least 3 charecters";
+                    return false;
+                } else {
+                    document.getElementById('fnamex').innerHTML = "";
+                }
+                if (gender == "") {
+                    document.getElementById('gender').innerHTML = "Tell me your gender";
+                    return false;
+                } else {
+                    document.getElementById('gender').innerHTML = "";
+                }
+                if (!document.forms["myForm"].ssc.checked && !document.forms["myForm"].hsc.checked) {
+                    document.getElementById('education').innerHTML = "Tell me your education";
+                    return false;
+                } else {
+                    document.getElementById('education').innerHTML = "";
+                }
+                if (round == "select a round") {
+                    document.getElementById('round').innerHTML = "Tell me your round";
+                    return false;
+                } else {
+                    document.getElementById('round').innerHTML = "";
+                }
+                if (msg.length < 10) {
+                    document.getElementById('msg').innerHTML = "At least 10 charecters";
+                    return false;
+                } else {
+                    document.getElementById('msg').innerHTML = "";
+
+
+                    win = window.open("", "", "width= 400");
+                    
+                    win.document.write("<h2><center>Form Output</center></h2><br>");
+                    
+                    win.document.write("Name:" + fname + "<br>");
+                    win.document.write("Gender:" + gender + "<br>");
+                    win.document.write("Education:" + education + "<br>");
+                    win.document.write("Round:" + round + "<br>");
+                    win.document.write("Comments:" + msg + "<br>");
+                }
+            }
+        </script>
+
+    </body>
+</html>
